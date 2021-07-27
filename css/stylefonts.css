@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?388d91');
+    src:  url('../fonts/icomoon.eot?388d91#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?388d91') format('truetype'),
+      url('../fonts/icomoon.woff?388d91') format('woff'),
+      url('../fonts/icomoon.svg?388d91#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-to-bottom:before {
+    content: "\e904";
+    color: #fff;
+  }
+  .icon-ok:before {
+    content: "\e902";
+    color: #fff;
+  }
+  .icon-message:before {
+    content: "\e901";
+    color: #fff;
+  }
+  .icon-vk:before {
+    content: "\e900";
+    color: #fff;
+  }
+  .icon-facebook:before {
+    content: "\e903";
+  }
+  .icon-instagram:before {
+    content: "\e905";
+  }
+  .icon-telefon:before {
+    content: "\e908";
+  }
+  .icon-location:before {
+    content: "\e947";
+  }
+  .icon-clock2:before {
+    content: "\e94f";
+  }
+  
+  @font-face {
+    font-family: 'Museo Sans';
+    src: local('../fonts/Museo Sans 300'), local('Museo-Sans-300'),
+        url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-300.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl-300.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'Museo Sans';
+    src: local('../fonts/Museo Sans 500'), local('Museo-Sans-500'),
+        url('../fonts/MuseoSansCyrl-500.woff2') format('woff2'),
+        url('../fontsMuseoSansCyrl-500.woff') format('woff'),
+        url('../fontsMuseoSansCyrl-500.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Museo Sans';
+    src: local('../fonts/Museo Sans 700'), local('Museo-Sans-700'),
+        url('../fonts/MuseoSansCyrl-700.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-700.woff') format('woff'),
+        url('../fonts/MuseoSansCyrl-700.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'TT Norms';
+    src: local('../fonts/TT Norms Medium'), local('TT-Norms-Medium'),
+        url('../fonts/TTNorms-Medium.woff2') format('woff2'),
+        url('../fonts/TTNorms-Medium.woff') format('woff'),
+        url('../fonts/TTNorms-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
