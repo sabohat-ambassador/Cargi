@@ -1,62 +1,61 @@
 @font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?388d91');
-    src:  url('../fonts/icomoon.eot?388d91#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?388d91') format('truetype'),
-      url('../fonts/icomoon.woff?388d91') format('woff'),
-      url('../fonts/icomoon.svg?388d91#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-to-bottom:before {
-    content: "\e904";
-    color: #fff;
-  }
-  .icon-ok:before {
-    content: "\e902";
-    color: #fff;
-  }
-  .icon-message:before {
-    content: "\e901";
-    color: #fff;
-  }
-  .icon-vk:before {
-    content: "\e900";
-    color: #fff;
-  }
-  .icon-facebook:before {
-    content: "\e903";
-  }
-  .icon-instagram:before {
-    content: "\e905";
-  }
-  .icon-telefon:before {
-    content: "\e908";
-  }
-  .icon-location:before {
-    content: "\e947";
-  }
-  .icon-clock2:before {
-    content: "\e94f";
-  }
-  
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?4uzw25');
+  src:  url('../fonts/icomoon.eot?4uzw25#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?4uzw25') format('truetype'),
+    url('../fonts/icomoon.woff?4uzw25') format('woff'),
+    url('../fonts/icomoon.svg?4uzw25#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-uniE900:before {
+  content: "\e900";
+}
+.icon-vk:before {
+  content: "\e901";
+}
+.icon-message:before {
+  content: "\e902";
+}
+.icon-ok:before {
+  content: "\e903";
+}
+.icon-facebook:before {
+  content: "\e904";
+}
+.icon-to-bottom:before {
+  content: "\e905";
+}
+.icon-instagram:before {
+  content: "\e906";
+}
+.icon-telefon:before {
+  content: "\e908";
+}
+.icon-location:before {
+  content: "\e947";
+}
+.icon-clock2:before {
+  content: "\e94f";
+}
+
   @font-face {
     font-family: 'Museo Sans';
     src: local('../fonts/Museo Sans 300'), local('Museo-Sans-300'),
