@@ -5,6 +5,7 @@
 body {
     margin: 0;
     font-family: 'Museo Sans', sans-serif;
+    background-color: #F5F5F5;
 }
 
 :root {
@@ -38,7 +39,8 @@ a {
         &:not(:last-child) {
             margin-right: 30px;
         }
-        &:hover{
+
+        &:hover {
             color: rgb(246, 34, 33, );
         }
     }
@@ -139,7 +141,7 @@ a {
     font-size: 1.28rem;
     position: relative;
 
-    &:after{
+    &:after {
         content: "";
         width: 50px;
         height: 5px;
@@ -151,12 +153,13 @@ a {
         right: 0;
         transition: all 500ms ease-in-out;
     }
-    
+
 }
 
-.menu__button:hover::after{
+.menu__button:hover::after {
     width: 100%;
 }
+
 .menu__link__circle {
     display: inline-block;
     width: 5px;
@@ -230,6 +233,7 @@ a {
     margin-top: 80px;
     margin-bottom: 50px;
     position: relative;
+
 
     &:after {
         content: "";
@@ -316,12 +320,14 @@ a {
     }
 
 }
-.all-works{
+
+.all-works {
     text-align: right;
     color: #080808;
     font-size: 1.14rem;
     font-weight: 500;
-    .to-right{
+
+    .to-right {
         color: #F62221;
         margin-left: 6px;
         vertical-align: middle;
@@ -331,23 +337,26 @@ a {
 
 // car-class//
 
-.car-class{
+.car-class {
     margin-bottom: 80px;
 }
 
-.car-box{
+.car-box {
     position: relative;
-    &__title{
+
+    &__title {
         color: #fff;
         font-size: 1.71rem;
         font-weight: 700;
     }
-    &__text{
+
+    &__text {
         color: #fff;
         font-size: 1.14rem;
         max-width: 406px;
     }
-    &:before{
+
+    &:before {
         content: "";
         position: absolute;
         background: linear-gradient(180deg, rgba(8, 8, 8, 0) 0%, rgba(8, 8, 8, 0.666667) 59.9%, #080808 100%);
@@ -358,17 +367,18 @@ a {
         transform: rotate(-180deg);
     }
 }
-.car-box__img{
+
+.car-box__img {
     width: 100%;
 }
 
-.car-box__info{
+.car-box__info {
     position: absolute;
     top: 38px;
     left: 50px;
 }
 
-.date{
+.date {
     color: #7B7B7B;
     font-size: 0.85rem;
     font-weight: 700;
@@ -377,29 +387,117 @@ a {
 
 // our works//
 
-.grid-container{
+
+.grid-container {
     display: grid;
     gap: 15px;
     grid-template-columns: auto 83px;
     grid-template-rows: 76px 76px 76px 76px 76px;
+    img{
+        border-radius: 7px;
+    }
 }
-.bigimage{
+
+.bigimage {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 7px;
 }
-.grid-item1{
+
+.grid-item:hover img {
+    border: 5px solid #F62221;
+    border-radius: 7px
+}
+
+.grid-item1 {
     grid-column: 1 / 2;
     grid-row: 1 / 6;
 }
 
-.grid-item2{
+.grid-item2 {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
 
-.grid-item3{
+.grid-item3 {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+}
+
+.grid-text {
+    &__title {
+        color: #080808;
+        font-size: 1.71rem;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+
+    &__list {
+        color: #7B7B7B;
+        font-size: 1rem;
+        margin-bottom: 50px;
+    }
+}
+
+::marker {
+    color: #F62221;
+}
+
+
+// map//
+
+.map {
+    background-color: #F5F5F5;
+    padding-top: 90px;
+}
+
+
+.logo-red {
+    background-color: #F62221;
+    padding: 13px 30px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 16px 24px rgba(246, 34, 33, 0.2), 0px 2px 6px rgba(246, 34, 33, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+
+.circle-red{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #F62221;
+    margin-left: 10px;
+    &_right{
+        margin-right: 10px;
+    }
+}
+.location{
+    text-align: center;
+    position: relative;
+    &::after {
+        content: "";
+        width: 520px;
+        height: 6px;
+        position: absolute;
+        background-color: #F62221;
+        border-radius: 0px 55px 55px 0px;
+        transform: rotate(-180deg);
+        top: 14px;
+        right: 0;
+    }
+    &::before {
+            content: "";
+            width: 520px;
+            height: 6px;
+            position: absolute;
+            background-color: #F62221;
+            border-radius: 0px 55px 55px 0px;
+            top: 14px;
+            left: 0;
+    }
+}
+
+.karta {
+    width: 100%;
 }
