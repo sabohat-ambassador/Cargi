@@ -602,6 +602,14 @@ a {
         }
     }
 }
+.info{
+height: 107px;
+border-left: 1px dashed rgba(246, 34, 33, 0.25);
+border-right: 1px dashed rgba( 246, 34, 33, 0.25);
+&:not(:first-child){
+    padding-right: 20px;
+}
+}
 
 
 // PAGE 2//
