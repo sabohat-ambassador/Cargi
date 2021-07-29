@@ -97,6 +97,9 @@ a {
   color: #fff;
   font-size: 1.14rem;
 }
+.menu__link:hover {
+  color: #F62221;
+}
 .menu__link .icon-to-bottom {
   display: inline-block;
   font-size: 0.5rem;
@@ -191,6 +194,8 @@ a {
 
 .bg_red {
   background-color: #F62221;
+  -webkit-box-shadow: 0px 16px 24px rgba(246, 34, 33, 0.2), 0px 2px 6px rgba(246, 34, 33, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 16px 24px rgba(246, 34, 33, 0.2), 0px 2px 6px rgba(246, 34, 33, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.04);
 }
 
 .border_red {
@@ -408,9 +413,6 @@ a {
   -ms-grid-row: 9;
   -ms-grid-column: 3;
 }
-.grid-container img {
-  border-radius: 7px;
-}
 
 .bigimage {
   width: 100%;
@@ -420,9 +422,35 @@ a {
   border-radius: 7px;
 }
 
-.grid-item:hover img {
+.small {
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+}
+.small img {
+  width: 100%;
+  height: 100%;
+}
+.small::before {
+  content: "";
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 8, 8, 0)), to(rgba(8, 8, 8, 0.8)));
+  background: linear-gradient(180deg, rgba(8, 8, 8, 0) 0%, rgba(8, 8, 8, 0.8) 100%);
+  border-radius: 0px 0px 7px 7px;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.small:hover {
   border: 5px solid #F62221;
   border-radius: 7px;
+}
+.small:hover::before {
+  background: transparent;
 }
 
 .grid-item1 {
@@ -473,15 +501,6 @@ a {
   padding-top: 90px;
 }
 
-.logo-red {
-  background-color: #F62221;
-  padding: 13px 30px;
-  border-radius: 5px;
-  position: relative;
-  -webkit-box-shadow: 0px 16px 24px rgba(246, 34, 33, 0.2), 0px 2px 6px rgba(246, 34, 33, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.04);
-          box-shadow: 0px 16px 24px rgba(246, 34, 33, 0.2), 0px 2px 6px rgba(246, 34, 33, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.04);
-}
-
 .circle-red {
   display: inline-block;
   width: 6px;
@@ -500,27 +519,113 @@ a {
 }
 .location::after {
   content: "";
-  width: 520px;
+  width: 42%;
   height: 6px;
   position: absolute;
   background-color: #F62221;
   border-radius: 0px 55px 55px 0px;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
-  top: 14px;
+  top: 0;
   right: 0;
 }
 .location::before {
   content: "";
-  width: 520px;
+  width: 42%;
   height: 6px;
   position: absolute;
   background-color: #F62221;
   border-radius: 0px 55px 55px 0px;
-  top: 14px;
+  top: 0;
   left: 0;
+  z-index: 99;
 }
 
 .karta {
   width: 100%;
+}
+
+.map-photo {
+  position: relative;
+}
+.map-photo::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/cargi-logo.svg);
+  background-repeat: no-repeat;
+  top: -25px;
+  left: 44%;
+  right: 0;
+  bottom: 0;
+}
+
+.main-footer {
+  background-color: #080808;
+  padding: 80px 0;
+}
+
+.about-company {
+  max-width: 310px;
+}
+.about-company__text {
+  color: #697A89;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.title-red {
+  color: #F62221;
+  font-size: 1.14rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.footer-text {
+  list-style: none;
+  margin-bottom: 15px;
+}
+.footer-text li {
+  margin-bottom: 10px;
+}
+.footer-text a {
+  color: #fff;
+  font-weight: 500;
+  font-family: "TT Norms", "ans-serif";
+}
+.footer-text a:hover {
+  color: #F62221;
+}
+
+.footer-contact .top-header__info {
+  margin-bottom: 10px;
+}
+
+.footer-sayts {
+  margin-top: 20px;
+}
+.footer-sayts__link {
+  color: #FFFFFF;
+  font-size: 1.07rem;
+  background-color: #272727;
+  border-radius: 5px;
+  padding: 7px 10px;
+  margin-right: 10px;
+}
+.footer-sayts__link:hover {
+  color: #fff;
+  background-color: #F62221;
+}
+
+.bg-2 {
+  background-image: url(../img/bg2.jpg);
+  background-repeat: no-repeat;
+}
+
+.title_size {
+  font-size: 4.57rem;
+}
+
+.button-bottom {
+  margin-bottom: 69px;
 }
